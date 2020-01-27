@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, HashRouter, Switch } from 'react-router-dom';
 import routes from './routes';
-import Footer from './components/layouts/Footer';
 import Header from './components/layouts/Header';
 import Sidebar from './components/layouts/Sidebar';
+import { Layout } from 'antd';
+
+// CSS
+import 'antd/dist/antd.css';
+import './App.scss';
+
 const App = () => {
+
+    const [collapsed, setCollapsed] = useState(false);
+
+    const changeCollapsed = () => {
+        setCollapsed(!collapsed);
+    };
+
     const showContent = routes => {
         var result = null;
         if (routes.length > 0) {
@@ -25,10 +37,13 @@ const App = () => {
 
     return (
         <HashRouter>
-            {showContent(routes)}
-            <Header />
-            <Sidebar />
-            <Footer />
+            <Layout>
+                <Sidebar collapsed={collapsed} />
+                <Layout>
+                    <Header onClick={changeCollapsed} collapsed={collapsed} />
+                    {showContent(routes)}
+                </Layout>
+            </Layout>
         </HashRouter>
     );
 }
