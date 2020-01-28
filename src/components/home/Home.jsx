@@ -10,8 +10,8 @@ const Home = () => {
         <>
             <Row>
                 <Col
-                    xs={20}
-                    sm={16}
+                    xs={24}
+                    sm={24}
                     md={12}
                     lg={8}
                     xl={4}
@@ -25,7 +25,7 @@ const Home = () => {
                         <Skills />
                     </div>
                 </Col>
-                <Col xs={4} sm={8} md={12} lg={16} xl={20}>
+                <Col xs={24} sm={24} md={12} lg={16} xl={20}>
                     <div>
                         <Experience />
                     </div>
