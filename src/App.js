@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Route, HashRouter, Switch } from 'react-router-dom';
+import { HashRouter, Switch } from 'react-router-dom';
 import routes from './routes';
 import Header from './components/layouts/Header';
 import Sidebar from './components/layouts/Sidebar';
+import GlobalRoute from './components/global/GlobalRoute';
 import { Layout } from 'antd';
 
 // CSS
+import 'aos/dist/aos.css';
 import 'antd/dist/antd.css';
 import './App.scss';
 
@@ -22,7 +24,7 @@ const App = () => {
         if (routes.length > 0) {
             result = routes.map((route, index) => {
                 return (
-                    <Route
+                    <GlobalRoute
                         key={index}
                         path={route.path}
                         exact={route.exact}

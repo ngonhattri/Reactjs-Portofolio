@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Layout, Menu, Icon } from 'antd';
+import { Link } from 'react-router-dom';
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -36,12 +37,16 @@ const Sidebar = ({ collapsed }) => {
                         }
                     >
                         <Menu.Item>
-                            <Icon type="idcard" />
-                            Profile
+                            <Link to="/">
+                                <Icon type="idcard" />
+                                Profile
+                            </Link>
                         </Menu.Item>
                         <Menu.Item>
-                            <Icon type="read" />
-                            Blog
+                            <Link to="/blogs">
+                                <Icon type="read" />
+                                Blogs
+                            </Link>
                         </Menu.Item>
                     </SubMenu>
                     <SubMenu
@@ -53,8 +58,10 @@ const Sidebar = ({ collapsed }) => {
                         }
                     >
                         <Menu.Item>
-                            <Icon type="message" />
-                            Chat App
+                            <Link to="/">
+                                <Icon type="message" />
+                                Chat App
+                            </Link>
                         </Menu.Item>
                     </SubMenu>
                 </Menu>
