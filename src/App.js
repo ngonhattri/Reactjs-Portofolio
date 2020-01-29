@@ -6,7 +6,8 @@ import Sidebar from './components/layouts/Sidebar';
 import Menu from './components/layouts/Menu';
 import GlobalRoute from './components/global/GlobalRoute';
 import { Layout } from 'antd';
-
+import { Provider } from 'react-redux';
+import store from './store';
 // CSS
 import 'aos/dist/aos.css';
 import 'antd/dist/antd.css';
@@ -48,21 +49,23 @@ const App = () => {
     };
 
     return (
-        <HashRouter>
-            <Layout>
-                {width > 470 ?
-                    (
-                        <Sidebar collapsed={collapsed} />
-                    ) : (
-                        <Menu />
-                    )
-                }
+        <Provider store={store}>
+            <HashRouter>
                 <Layout>
-                    <Header onClick={changeCollapsed} collapsed={collapsed} width={width} />
-                    {showContent(routes)}
+                    {width > 470 ?
+                        (
+                            <Sidebar collapsed={collapsed} />
+                        ) : (
+                            <Menu />
+                        )
+                    }
+                    <Layout>
+                        <Header onClick={changeCollapsed} collapsed={collapsed} width={width} />
+                        {showContent(routes)}
+                    </Layout>
                 </Layout>
-            </Layout>
-        </HashRouter>
+            </HashRouter>
+        </Provider>
     );
 }
 
