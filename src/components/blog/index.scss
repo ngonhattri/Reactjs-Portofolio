@@ -1,0 +1,5 @@
+.blog-card {
+    & > .ant-card-cover > img {
+        height: 260px;
+    }
+}
