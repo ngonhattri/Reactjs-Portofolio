@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter, Switch } from 'react-router-dom';
 import routes from './routes';
 import Header from './components/layouts/Header';
 import Sidebar from './components/layouts/Sidebar';
+import Menu from './components/layouts/Menu';
 import GlobalRoute from './components/global/GlobalRoute';
 import { Layout } from 'antd';
 
@@ -14,10 +15,19 @@ import './App.scss';
 const App = () => {
 
     const [collapsed, setCollapsed] = useState(false);
-
+    const [width, setWidth] = useState(window.innerWidth)
     const changeCollapsed = () => {
         setCollapsed(!collapsed);
     };
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     const showContent = routes => {
         var result = null;
@@ -40,9 +50,15 @@ const App = () => {
     return (
         <HashRouter>
             <Layout>
-                <Sidebar collapsed={collapsed} />
+                {width > 470 ?
+                    (
+                        <Sidebar collapsed={collapsed} />
+                    ) : (
+                        <Menu />
+                    )
+                }
                 <Layout>
-                    <Header onClick={changeCollapsed} collapsed={collapsed} />
+                    <Header onClick={changeCollapsed} collapsed={collapsed} width={width} />
                     {showContent(routes)}
                 </Layout>
             </Layout>
