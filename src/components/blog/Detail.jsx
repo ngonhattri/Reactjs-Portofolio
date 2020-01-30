@@ -33,7 +33,7 @@ let Detail = props => {
                             backgroundPosition: 'center',
                         }}
                     ></div>
-                    <Paragraph style={{ paddingTop: 50 }}>
+                    <Paragraph style={{ paddingTop: 50 }} className="blog-detail">
                         <div
                             dangerouslySetInnerHTML={createMarkup(data.content)}
                         />

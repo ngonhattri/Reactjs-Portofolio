@@ -24,6 +24,15 @@
     float: right;
 }
 
+.blog-detail {
+    width: 70%;
+    margin: auto;
+    & > div > p > img {
+        display: block;
+        margin: auto auto;
+    }
+}
+
 pre {
     background: #f4f4f4;
     border: 1px solid #ddd;
@@ -39,5 +48,5 @@ pre {
     padding: 1em 1.5em;
     display: block;
     word-wrap: break-word;
-    color:#1F2E24;
+    color: #1f2e24;
 }
