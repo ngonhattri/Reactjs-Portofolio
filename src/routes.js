@@ -1,6 +1,7 @@
 import Home from './components/home/Home';
 import Blog from './components/blog/Blog';
 import Detail from './components/blog/Detail';
+import Chat from './components/chat/Chat';
 // Layout
 import GlobalLayout from './components/global/GlobalLayout';
 const routes = [
@@ -20,6 +21,12 @@ const routes = [
         path: "/blogs/:id",
         exact: true,
         main: Detail,
+        layout: GlobalLayout,
+    },
+    {
+        path: "/chat",
+        exact: true,
+        main: Chat,
         layout: GlobalLayout,
     }
 ];

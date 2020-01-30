@@ -58,7 +58,7 @@ const Sidebar = ({ collapsed }) => {
                         }
                     >
                         <Menu.Item>
-                            <Link to="/">
+                            <Link to="/chat">
                                 <Icon type="message" />
                                 Chat App
                             </Link>

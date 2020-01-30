@@ -12,9 +12,7 @@
 
 .logo {
     height: 32px;
-    // background: rgba(255, 255, 255, 0.2);
     margin: 16px;
-
     &__text {
         color: $color-white;
         height: auto;
@@ -29,4 +27,11 @@
 .ant-menu-light > .ant-menu-submenu > .ant-menu-sub {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.ant-menu-item-selected {
+    &:last-child {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
 }

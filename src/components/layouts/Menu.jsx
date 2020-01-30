@@ -17,7 +17,7 @@ const Menu = () => {
             <Button
                 type="primary"
                 onClick={showDrawer}
-                style={{ background: '#001529' }}
+                style={{ background: '#001529', border: 'none' }}
             >
                 Nguyễn Minh Quân
             </Button>
@@ -33,6 +33,9 @@ const Menu = () => {
                 </p>
                 <p>
                     <Link to="/blogs">Blogs</Link>
+                </p>
+                <p>
+                    <Link to="/chat">Chat</Link>
                 </p>
             </Drawer>
         </>
