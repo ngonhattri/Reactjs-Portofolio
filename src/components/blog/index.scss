@@ -20,10 +20,8 @@
 }
 
 .fixed-button {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    margin: 20px;
+    position: relative;
+    float: right;
 }
 
 pre {

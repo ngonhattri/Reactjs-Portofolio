@@ -37,12 +37,12 @@ let Detail = props => {
                         <div
                             dangerouslySetInnerHTML={createMarkup(data.content)}
                         />
-                    </Paragraph>
-                    
+                    </Paragraph>              
                 </>
             ) : (
                 <Skeleton />
             )}
+            <hr/>
             <Link to="/blogs">
                 <Button className="fixed-button" type="primary">
                     <Icon type="left" />
