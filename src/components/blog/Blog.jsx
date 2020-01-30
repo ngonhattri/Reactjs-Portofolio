@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect, useDispatch } from 'react-redux';
 import { getBlogs } from '../../redux/actions/blogActions';
+import moment from 'moment';
 const { Title } = Typography;
 const { Meta } = Card;
 
@@ -54,7 +55,7 @@ let Blog = props => {
                               style={{ paddingRight: 10, paddingBottom: 10 }}
                               key={data._id}
                           >
-                              <Link to="/">
+                              <Link to={{ pathname: `/blogs/${data._id}` }}>
                                   <Card
                                       className="blog-card"
                                       cover={
@@ -63,9 +64,17 @@ let Blog = props => {
                                               src={data.image}
                                           />
                                       }
-                                      style={{ height: 345 }}
+                                      style={{ height: 345, borderRadius: 20 }}
                                   >
-                                      <Meta title={data.name} />
+                                      <Meta
+                                          title={data.name}
+                                          description={
+                                              'Ngày tạo ' +
+                                              moment(data.createdAt).format(
+                                                  'DD-MM-YYYY',
+                                              )
+                                          }
+                                      />
                                   </Card>
                               </Link>
                           </Col>

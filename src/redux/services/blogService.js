@@ -5,7 +5,7 @@ import * as types from '../actions/index';
 function* fetchBlogs(action) {
     const { page } = action;
     try {
-        const result = yield RequestService.get(`/api/v1/blogs/${page}`);
+        const result = yield RequestService.get(`/api/v1/blogs?page=${page}`);
         yield put({ type: types.SET_BLOGS, payload: result.data });
     } catch (error) {
         console.log(error.response);

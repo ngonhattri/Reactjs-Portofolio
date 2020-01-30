@@ -6,6 +6,7 @@ import {
 
 const initialState = {
     blogs: [],
+    blog: null,
     loading: false
 };
 
