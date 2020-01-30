@@ -38,6 +38,7 @@ let Detail = props => {
                             dangerouslySetInnerHTML={createMarkup(data.content)}
                         />
                     </Paragraph>
+                    
                 </>
             ) : (
                 <Skeleton />
