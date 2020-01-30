@@ -33,16 +33,19 @@ let Detail = props => {
                             backgroundPosition: 'center',
                         }}
                     ></div>
-                    <Paragraph style={{ paddingTop: 50 }} className="blog-detail">
+                    <Paragraph
+                        style={{ paddingTop: 50 }}
+                        className="blog-detail"
+                    >
                         <div
                             dangerouslySetInnerHTML={createMarkup(data.content)}
                         />
-                    </Paragraph>              
+                    </Paragraph>
                 </>
             ) : (
                 <Skeleton />
             )}
-            <hr/>
+            <hr className="hr-text" data-content="END" />
             <Link to="/blogs">
                 <Button className="fixed-button" type="primary">
                     <Icon type="left" />
