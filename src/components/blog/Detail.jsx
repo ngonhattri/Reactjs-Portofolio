@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Typography, Skeleton, Button, Icon } from 'antd';
+import { Typography, Row, Col, Skeleton, Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
 import { connect, useDispatch } from 'react-redux';
 import { getBlog } from '../../redux/actions/blogActions';
@@ -24,23 +24,29 @@ let Detail = props => {
             {data ? (
                 <>
                     <Title level={2}>{data.name}</Title>
-                    <div
-                        className="image-cover"
-                        style={{
-                            backgroundImage: `url(${data.image})`,
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                        }}
-                    ></div>
-                    <Paragraph
-                        style={{ paddingTop: 50 }}
-                        className="blog-detail"
-                    >
-                        <div
-                            dangerouslySetInnerHTML={createMarkup(data.content)}
-                        />
-                    </Paragraph>
+                    <Row>
+                        <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                            <div
+                                className="image-cover"
+                                style={{
+                                    backgroundImage: `url(${data.image})`,
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                }}
+                            ></div>
+                            <Paragraph
+                                style={{ paddingTop: 50 }}
+                                className="blog-detail"
+                            >
+                                <div
+                                    dangerouslySetInnerHTML={createMarkup(
+                                        data.content,
+                                    )}
+                                />
+                            </Paragraph>
+                        </Col>
+                    </Row>
                 </>
             ) : (
                 <Skeleton />
