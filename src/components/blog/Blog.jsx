@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect, useDispatch } from 'react-redux';
 import { getBlogs } from '../../redux/actions/blogActions';
+import Navigation from './Navigation';
 import moment from 'moment';
 const { Title } = Typography;
 const { Meta } = Card;
 
 let Blog = props => {
     const [page] = useState(1);
+    const [category, setCategory] = useState(null);
+    console.log(category);
     const dispatch = useDispatch();
 
     const data = props.blogs.blogs;
@@ -36,14 +39,19 @@ let Blog = props => {
         );
     }
 
+    const handleClickMenu = key => {
+        setCategory(key.key);
+    };
+
     useEffect(() => {
-        dispatch(getBlogs(page));
-    }, [page, dispatch]);
+        dispatch(getBlogs(page, category));
+    }, [page, category, dispatch]);
 
     return (
         <>
             <Title level={2}>Quan Nguyen Blog</Title>
-            <Row>
+            <Navigation onClick={handleClickMenu} />
+            <Row style={{ marginTop: 20 }}>
                 {data.products
                     ? data.products.map(data => (
                           <Col
@@ -69,7 +77,9 @@ let Blog = props => {
                                       <Meta
                                           title={data.name}
                                           description={
-                                              'Ngày tạo ' +
+                                              'Danh mục ' +
+                                              data.categoryId.name +
+                                              ' / Ngày tạo ' +
                                               moment(data.createdAt).format(
                                                   'DD-MM-YYYY',
                                               )

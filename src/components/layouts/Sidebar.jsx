@@ -42,12 +42,6 @@ const Sidebar = ({ collapsed }) => {
                                 Profile
                             </Link>
                         </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/blogs">
-                                <Icon type="read" />
-                                Blogs
-                            </Link>
-                        </Menu.Item>
                     </SubMenu>
                     <SubMenu
                         title={
@@ -57,6 +51,12 @@ const Sidebar = ({ collapsed }) => {
                             </span>
                         }
                     >
+                        <Menu.Item>
+                            <Link to="/blogs">
+                                <Icon type="read" />
+                                Blogs
+                            </Link>
+                        </Menu.Item>
                         <Menu.Item>
                             <Link to="/chat">
                                 <Icon type="message" />

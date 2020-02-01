@@ -3,10 +3,10 @@ import RequestService from '../../config/requestService';
 import * as types from '../actions/index';
 
 function* fetchBlogs(action) {
-    const { page } = action;
+    const { page, category } = action;
     try {
-        const result = yield RequestService.get(`/api/v1/blogs?page=${page}`);
-        yield put({ type: types.SET_BLOGS, payload: result.data });
+        const result = yield RequestService.get(`/api/v1/blogs?page=${page}&category=${category}`);
+        yield put({ type: types.SET_BLOGS, payload: result.data.data });
     } catch (error) {
         console.log(error.response);
     }

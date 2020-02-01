@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, Button } from 'antd';
+import { Drawer, Button, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 
 const Menu = () => {
@@ -17,9 +17,15 @@ const Menu = () => {
             <Button
                 type="primary"
                 onClick={showDrawer}
-                style={{ background: '#001529', border: 'none' }}
+                style={{
+                    background: '#001529',
+                    border: 'none',
+                    position: 'absolute',
+                    right: 0,
+                    width: 50,
+                }}
             >
-                Nguyễn Minh Quân
+                <Icon type="menu" />
             </Button>
             <Drawer
                 title="Menu"
