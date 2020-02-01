@@ -12,7 +12,6 @@ const { Meta } = Card;
 let Blog = props => {
     const [page] = useState(1);
     const [category, setCategory] = useState(null);
-    console.log(category);
     const dispatch = useDispatch();
 
     const data = props.blogs.blogs;
@@ -61,7 +60,7 @@ let Blog = props => {
                               lg={6}
                               xl={6}
                               style={{ paddingRight: 10, paddingBottom: 10 }}
-                              key={data._id}
+                              key={data._id} data-aos="fade-left"
                           >
                               <Link to={{ pathname: `/blogs/${data._id}` }}>
                                   <Card
