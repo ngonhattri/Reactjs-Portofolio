@@ -30,6 +30,10 @@
 }
 
 .ant-menu-item-selected {
+    &:first-child {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
     &:last-child {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;

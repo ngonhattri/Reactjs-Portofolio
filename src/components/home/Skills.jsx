@@ -86,33 +86,6 @@ const Skills = () => {
                     percent={43}
                     status="active"
                 />
-                <Text>Jest.js</Text>
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={20}
-                    status="active"
-                />
-                <Text>Mocha.js</Text>
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={30}
-                    status="active"
-                />
-                <Text>Chai.js</Text>
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={5}
-                    status="active"
-                />
             </div>
         </>
     );
