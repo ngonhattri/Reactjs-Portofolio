@@ -15,6 +15,7 @@ let Navigation = props => {
     return (
         <>
             <Menu onClick={props.onClick} mode="horizontal">
+                <Menu.Item key={null}>All</Menu.Item>
                 {data
                     ? data.map(x => <Menu.Item key={x._id}>{x.name}</Menu.Item>)
                     : null}

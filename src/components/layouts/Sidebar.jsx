@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 const { Sider } = Layout;
-const { SubMenu } = Menu;
 
 const Sidebar = ({ collapsed }) => {
     const [value, setValue] = useState(true);
@@ -28,42 +27,18 @@ const Sidebar = ({ collapsed }) => {
                         margin: 'auto',
                     }}
                 >
-                    <SubMenu
-                        title={
-                            <span>
-                                <Icon type="home" />
-                                <span>Home</span>
-                            </span>
-                        }
-                    >
-                        <Menu.Item>
-                            <Link to="/">
-                                <Icon type="idcard" />
-                                Profile
-                            </Link>
-                        </Menu.Item>
-                    </SubMenu>
-                    <SubMenu
-                        title={
-                            <span>
-                                <Icon type="appstore" />
-                                <span>Project</span>
-                            </span>
-                        }
-                    >
-                        <Menu.Item>
-                            <Link to="/blogs">
-                                <Icon type="read" />
-                                Blogs
-                            </Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/chat">
-                                <Icon type="message" />
-                                Chat App
-                            </Link>
-                        </Menu.Item>
-                    </SubMenu>
+                    <Menu.Item>
+                        <Link to="/">
+                            <Icon type="idcard" />
+                            Profile
+                        </Link>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <Link to="/blogs">
+                            <Icon type="read" />
+                            Blogs
+                        </Link>
+                    </Menu.Item>
                 </Menu>
             </Sider>
         </>
