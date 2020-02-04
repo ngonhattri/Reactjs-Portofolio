@@ -39,6 +39,12 @@ const Sidebar = ({ collapsed }) => {
                             Blogs
                         </Link>
                     </Menu.Item>
+                    <Menu.Item>
+                        <Link to="/travels">
+                            <Icon type="dingding" />
+                            Travels
+                        </Link>
+                    </Menu.Item>
                 </Menu>
             </Sider>
         </>
