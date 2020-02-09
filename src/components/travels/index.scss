@@ -2,6 +2,10 @@
     fill: $color-secondary;
 }
 
+.svg-container {
+    overflow-x: auto;
+}
+
 path {
     &:hover {
         fill: $color-primary-light;
