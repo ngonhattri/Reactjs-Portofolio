@@ -45,3 +45,13 @@ path {
         height: 0;
     }
 }
+
+.ant-carousel .slick-dots li {
+    margin-top: 5px;
+    height: 10px;
+    background-color: $color-primary;
+    
+    & button {
+        height: 10px;
+    }
+}

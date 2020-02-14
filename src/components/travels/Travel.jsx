@@ -35,7 +35,14 @@ let Travel = () => {
         <>
             <Title level={2}>Du lịch</Title>
             <Row>
-                <Col xs={24} sm={24} md={24} lg={24} xl={24} style={{textAlign: 'center'}}>
+                <Col
+                    xs={24}
+                    sm={24}
+                    md={24}
+                    lg={24}
+                    xl={24}
+                    style={{ textAlign: 'center' }}
+                >
                     <Minimap />
                     <div className="description"></div>
                 </Col>

@@ -2,6 +2,7 @@ import Home from './components/home/Home';
 import Blog from './components/blog/Blog';
 import Detail from './components/blog/Detail';
 import Travel from './components/travels/Travel';
+import DetailTravel from './components/travels/DetailTravel';
 // Layout
 import GlobalLayout from './components/global/GlobalLayout';
 const routes = [
@@ -27,6 +28,12 @@ const routes = [
         path: "/travels",
         exact: true,
         main: Travel,
+        layout: GlobalLayout,
+    },
+    {
+        path: "/travels/:id",
+        exact: true,
+        main: DetailTravel,
         layout: GlobalLayout,
     },
 ];
