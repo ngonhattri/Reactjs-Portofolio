@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Row, Col, Card, Skeleton } from 'antd';
+import { Typography, Row, Col, Card, Skeleton, Pagination } from 'antd';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect, useDispatch } from 'react-redux';
@@ -10,7 +10,7 @@ const { Title } = Typography;
 const { Meta } = Card;
 
 let Blog = props => {
-    const [page] = useState(1);
+    const [page, setPage] = useState(1);
     const [category, setCategory] = useState(null);
     const dispatch = useDispatch();
 
@@ -42,6 +42,10 @@ let Blog = props => {
         setCategory(key.key);
     };
 
+    const onChangePage = pageNumber => {
+        setPage(pageNumber);
+    };
+
     useEffect(() => {
         dispatch(getBlogs(page, category));
     }, [page, category, dispatch]);
@@ -60,7 +64,8 @@ let Blog = props => {
                               lg={6}
                               xl={6}
                               style={{ paddingRight: 10, paddingBottom: 10 }}
-                              key={data._id} data-aos="fade-left"
+                              key={data._id}
+                              data-aos="fade-left"
                           >
                               <Link to={{ pathname: `/blogs/${data._id}` }}>
                                   <Card
@@ -90,6 +95,15 @@ let Blog = props => {
                       ))
                     : skeleton}
             </Row>
+            {data.numOfResults ? (
+                <Pagination
+                    showQuickJumper
+                    defaultCurrent={1}
+                    total={data.numOfResults}
+                    onChange={onChangePage}
+                    pageSize={8}
+                />
+            ) : null}
         </>
     );
 };
