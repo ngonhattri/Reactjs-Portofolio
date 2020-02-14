@@ -41,7 +41,7 @@ const Menu = () => {
                     <Link to="/blogs">Blogs</Link>
                 </p>
                 <p>
-                    <Link to="/travels">Traveks</Link>
+                    <Link to="/travels">Travels</Link>
                 </p>
             </Drawer>
         </>

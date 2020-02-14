@@ -22,21 +22,13 @@ let DetailTravel = props => {
                             <Title level={2} style={{ marginTop: 10 }}>
                                 {data.title}
                             </Title>
-                            <Carousel
-                                autoplay
-                                dots={true}
-                            >
+                            <Carousel autoplay dots={true}>
                                 {data.images.map(image => (
                                     <div key={image.url}>
                                         <img
                                             src={image.url}
                                             alt={image.description}
-                                            style={{
-                                                display: 'block',
-                                                marginLeft: 'auto',
-                                                marginRight: 'auto',
-                                                width: '50%',
-                                            }}
+                                            className="image-travel"
                                         />
                                         <Title
                                             level={4}
