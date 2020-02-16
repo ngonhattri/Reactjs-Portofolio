@@ -1,37 +1,52 @@
 import React from 'react';
-import { Tabs, Timeline } from 'antd';
+import { Tabs, Row, Col, Timeline } from 'antd';
+import experiences from '../data/experience.json';
+import educations from '../data/education.json';
 
+const dataExperiences = experiences.reverse();
+const dataEducations = educations.reverse();
 const { TabPane } = Tabs;
 const Experience = () => {
     return (
         <>
             <Tabs defaultActiveKey="1">
-                <TabPane tab="Education" key="1">
+                <TabPane tab="Experience" key="1">
                     <Timeline>
-                        <Timeline.Item>
-                            <b>Ho Chi Minh University of Technology</b>
-                            <p>Faculty of Information Technology</p>
-                            <p>2016 – 2020</p>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <b>KhoaPham Training Center</b>
-                            <p>Course: MEAN Stack & PHP/Laravel</p>
-                            <p>2017 - 2018</p>
-                        </Timeline.Item>
+                        {dataExperiences.map(data => (
+                            <Timeline.Item key={data.id}>
+                                <Row>
+                                    <Col xs={24} sm={24} md={4} lg={4} xl={4}>
+                                        <b>{data.name}</b>
+                                        <p>{data.position}</p>
+                                        <p>{data.year}</p>
+                                    </Col>
+                                    <Col
+                                        xs={24}
+                                        sm={24}
+                                        md={20}
+                                        lg={20}
+                                        xl={20}
+                                    >
+                                        <img
+                                            style={{ width: '75px' }}
+                                            src={data.image}
+                                            alt={data.name}
+                                        />
+                                    </Col>
+                                </Row>
+                            </Timeline.Item>
+                        ))}
                     </Timeline>
                 </TabPane>
-                <TabPane tab="Experience" key="2">
+                <TabPane tab="Education" key="2">
                     <Timeline>
-                        <Timeline.Item>
-                            <b>Vitop Media</b>
-                            <p>Junior NodeJS Developer</p>
-                            <p>9/2019 – 2/2020</p>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <b>GMV Tech</b>
-                            <p>Fresher Laravel Developer</p>
-                            <p>7/2018 – 10/2018</p>
-                        </Timeline.Item>
+                        {dataEducations.map(data => (
+                            <Timeline.Item key={data.id}>
+                                <b>{data.name}</b>
+                                <p>{data.position}</p>
+                                <p>{data.year}</p>
+                            </Timeline.Item>
+                        ))}
                     </Timeline>
                 </TabPane>
             </Tabs>

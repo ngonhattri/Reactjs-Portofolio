@@ -76,7 +76,7 @@ let Blog = props => {
                                               src={data.image}
                                           />
                                       }
-                                      style={{ height: 345, borderRadius: 20 }}
+                                      style={{ height: 360, borderRadius: 20 }}
                                   >
                                       <Meta
                                           title={data.name}

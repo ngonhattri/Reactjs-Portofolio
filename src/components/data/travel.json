@@ -54,8 +54,48 @@
         "title": "Tỉnh Lâm Đồng",
         "images": [
             {
-                "url": "",
-                "description": ""
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867768/travels/lam-dong/1.jpg",
+                "description": "Cảnh thơ mông Thiền viện Trúc Lâm"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867767/travels/lam-dong/2.jpg",
+                "description": "Tham quan làng gốm Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867767/travels/lam-dong/3.jpg",
+                "description": "Hồ Vô Cực Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867767/travels/lam-dong/4.jpg",
+                "description": "Team Vitop Media Hỏa Phượng 2019"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867767/travels/lam-dong/5.jpg",
+                "description": "Đồi Thông Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867769/travels/lam-dong/6.jpg",
+                "description": "Đồi Thông Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867769/travels/lam-dong/7.jpg",
+                "description": "Đồi Thông Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867770/travels/lam-dong/8.jpg",
+                "description": "Quảng Trường Lâm Viên Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867769/travels/lam-dong/9.jpg",
+                "description": "Tiệm bánh Cối Xây Gió Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867779/travels/lam-dong/10.jpg",
+                "description": "Đồi Cỏ Hồng Đà Lạt"
+            },
+            {
+                "url": "https://res.cloudinary.com/kori/image/upload/v1581867770/travels/lam-dong/11.jpg",
+                "description": "Đồi Cỏ Hồng Đà Lạt"
             }
         ]
     }

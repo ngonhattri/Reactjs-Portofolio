@@ -1,25 +1,9 @@
 import React from 'react';
 import { Typography, List } from 'antd';
+import listData from '../data/projects.json';
 
 const { Title } = Typography;
-
-const listData = [
-    {
-        title: 'Plansmart',
-        description: 'Back-end Developer',
-        content:
-            'Scrum methodology, clear and optimize code, Flow analytics, GIT Flow, Beginning AWS Lambda, Build core 40%',
-        image:
-            'https://res.cloudinary.com/kori/image/upload/v1580148600/projects/plantsmart.png',
-    },
-    {
-        title: 'Thế Giới Thợ',
-        description: 'Back-end Developer',
-        content: 'Maintain and do new feature, Firebase push notification',
-        image:
-            'https://res.cloudinary.com/kori/image/upload/v1580148601/projects/thegioitho.png',
-    },
-];
+const data = listData.reverse();
 
 const Project = () => {
     return (
@@ -33,7 +17,7 @@ const Project = () => {
                 pagination={{
                     pageSize: 3,
                 }}
-                dataSource={listData}
+                dataSource={data}
                 renderItem={item => (
                     <List.Item
                         key={item.title}

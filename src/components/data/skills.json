@@ -1,0 +1,46 @@
+{
+    "language": [
+        {
+            "id": 1,
+            "name": "JavaScript",
+            "percent": 54
+        },
+        {
+            "id": 2,
+            "name": "TypeScript",
+            "percent": 26
+        },
+        {
+            "id": 3,
+            "name": "PHP",
+            "percent": 38
+        },
+        {
+            "id": 4,
+            "name": "HTML/CSS",
+            "percent": 22
+        }
+    ],
+    "framework": [
+        {
+            "id": 1,
+            "name": "Nest.js",
+            "percent": 48
+        },
+        {
+            "id": 2,
+            "name": "Laravel",
+            "percent": 58
+        },
+        {
+            "id": 3,
+            "name": "Express.js",
+            "percent": 56
+        },
+        {
+            "id": 4,
+            "name": "React.js",
+            "percent": 32
+        }
+    ]
+}

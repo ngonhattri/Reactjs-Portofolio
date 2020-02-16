@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "KhoaPham Training Center",
+        "position": "Course: MEAN Stack & PHP/Laravel",
+        "year": "2017 - 2018"
+    },
+    {
+        "id": 2,
+        "name": "Ho Chi Minh University of Technology",
+        "position": "Faculty of Information Technology",
+        "year": "2016 – 2020"
+    }
+]

@@ -17,12 +17,17 @@ const Profile = () => {
                     <Icon
                         type="download"
                         key="download"
-                        onClick={() => window.open('https://drive.google.com/open?id=1gji1wPYP3h9WFeWp042qUnFnZSmLJDAy', '_blank')}
+                        onClick={() =>
+                            window.open(
+                                'https://drive.google.com/open?id=1gji1wPYP3h9WFeWp042qUnFnZSmLJDAy',
+                                '_blank',
+                            )
+                        }
                     />,
                 ]}
             >
                 <Meta title="Nguyễn Minh Quân" />
-                <Meta description="Node.js Developer" />
+                <Meta description="Back-end Developer" />
             </Card>
         </>
     );
