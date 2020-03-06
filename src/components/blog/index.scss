@@ -29,11 +29,9 @@
     margin: auto;
     font-size: 18px;
     overflow-x: auto;
-    & > div > p > img {
+    & > div > p > a > img {
         display: block;
         margin: auto auto;
-        max-width: 100%;
-        height: auto;
     }
 }
 
