@@ -1,7 +1,6 @@
 import React from 'react';
 import { Typography, List } from 'antd';
 import listData from '../data/projects.json';
-import './index.scss';
 
 const { Title } = Typography;
 const data = listData.reverse();

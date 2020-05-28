@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Button } from 'antd';
-import './index.scss';
 import networks from '../data/networks.json';
 
 const Link = () => {

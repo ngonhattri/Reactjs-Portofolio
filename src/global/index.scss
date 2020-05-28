@@ -22,28 +22,23 @@ $color-grey-light-2: #eee;
     min-height: 94vh !important;
 }
 
-@mixin respond($breakpoint) {
-    @if $breakpoint==phone {
-        @media only screen and (max-width: 600px) {
-            @content;
-        } //600px
-    }
+.ant-list-items {
+    height: 256px;
+}
 
-    @if $breakpoint==tab-port {
-        @media only screen and (max-width: 900px) {
-            @content;
-        } //900px
-    }
+.ant-tabs {
+    height: 400px;
+}
 
-    @if $breakpoint==tab-land {
-        @media only screen and (max-width: 1200px) {
-            @content;
-        } //1200px
-    }
+.mt-10 {
+    margin-top: 10px;
+}
 
-    @if $breakpoint==big-desktop {
-        @media only screen and (min-width: 1800px) {
-            @content;
-        } //1800
+@media only screen and (max-width: 1200px) {
+    .ant-tabs {
+        height: 600px;
+    }
+    .ant-list-items {
+        height: 400px;
     }
 }

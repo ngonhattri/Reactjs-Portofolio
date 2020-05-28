@@ -1,7 +1,6 @@
 import React from 'react';
 import { Tabs, Table } from 'antd';
 import skills from '../data/skills.json';
-import './index.scss';
 
 const { TabPane } = Tabs;
 const columnsBackend = [

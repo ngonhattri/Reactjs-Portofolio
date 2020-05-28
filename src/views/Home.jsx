@@ -20,10 +20,10 @@ const Home = () => {
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={16} xl={20}>
                     <Row gutter={16}>
-                        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <Col xs={24} sm={24} md={24} lg={24} xl={12}>
                             <Experience />
                         </Col>
-                        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <Col xs={24} sm={24} md={24} lg={24} xl={12}>
                             <Skills />
                         </Col>
                     </Row>
