@@ -1,63 +1,80 @@
 import React from 'react';
-import { Typography, Row, Col } from 'antd';
+import { Tabs, Table } from 'antd';
 import skills from '../data/skills.json';
 import './index.scss';
 
-const { Title, Text } = Typography;
+const { TabPane } = Tabs;
+const columnsBackend = [
+    {
+        title: 'Skill',
+        dataIndex: 'name',
+        key: 'name',
+        render: (text) => <b>{text}</b>,
+        width: 150,
+    },
+    {
+        title: 'Project used',
+        dataIndex: 'project',
+        key: 'project',
+        width: 150,
+    },
+];
 
 const Skills = () => {
     return (
         <>
-            <Title level={2} style={{ marginTop: 10 }}>
-                Skills
-            </Title>
-            <Row>
-                <Col className="mt-10" xs={24} sm={24} md={24} lg={24} xl={24}>
-                    <Title level={4}>Programming Language</Title>
-                    {skills.programming.map((skill) => (
-                        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <div key={skill.id}>
-                                <Text>{skill.name}</Text>
-                            </div>
-                        </Col>
-                    ))}
-                </Col>
-            </Row>
-            <hr />
-            <Row>
-                <Col className="mt-10" xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Title level={4}>Front-end</Title>
-                    {skills.frontend.map((skill) => (
-                        <div key={skill.id}>
-                            <Text>{skill.name}</Text>
-                        </div>
-                    ))}
-                </Col>
-                <Col className="mt-10" xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Title level={4}>Back-end</Title>
-                    {skills.backend.map((skill) => (
-                        <div key={skill.id}>
-                            <Text>{skill.name}</Text>
-                        </div>
-                    ))}
-                </Col>
-                <Col className="mt-10" xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Title level={4}>Database</Title>
-                    {skills.database.map((skill) => (
-                        <div key={skill.id}>
-                            <Text>{skill.name}</Text>
-                        </div>
-                    ))}
-                </Col>
-                <Col className="mt-10" xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Title level={4}>Devops</Title>
-                    {skills.devops.map((skill) => (
-                        <div key={skill.id}>
-                            <Text>{skill.name}</Text>
-                        </div>
-                    ))}
-                </Col>
-            </Row>
+            <Tabs defaultActiveKey="1">
+                <TabPane tab="Programming Language" key="1">
+                    <Table
+                        rowKey="id"
+                        pagination={{
+                            pageSize: 4,
+                        }}
+                        columns={columnsBackend}
+                        dataSource={skills.programming.sort((a, b) => (a.project < b.project) ? 1 : -1)}
+                    />
+                </TabPane>
+                <TabPane tab="Back-end" key="2">
+                    <Table
+                        rowKey="id"
+                        pagination={{
+                            pageSize: 4,
+                        }}
+                        columns={columnsBackend}
+                        dataSource={skills.backend.sort((a, b) => (a.project < b.project) ? 1 : -1)}
+                    />
+                </TabPane>
+                <TabPane tab="Front-end" key="3">
+                    <Table
+                        rowKey="id"
+                        pagination={{
+                            pageSize: 4,
+                        }}
+                        columns={columnsBackend}
+                        dataSource={skills.frontend.sort((a, b) => (a.project < b.project) ? 1 : -1)}
+                    />
+                </TabPane>
+                <TabPane tab="Devops" key="4">
+                    <Table
+                        rowKey="id"
+                        pagination={{
+                            pageSize: 4,
+                        }}
+                        columns={columnsBackend}
+                        dataSource={skills.devops.sort((a, b) => (a.project < b.project) ? 1 : -1)}
+                    />
+                </TabPane>
+                <TabPane tab="Database" key="5">
+                    <Table
+                        rowKey="id"
+                        pagination={{
+                            pageSize: 4,
+                        }}
+                        columns={columnsBackend}
+                        dataSource={skills.database}
+                    />
+                </TabPane>
+            </Tabs>
         </>
     );
 };

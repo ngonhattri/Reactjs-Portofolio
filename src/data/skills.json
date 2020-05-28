@@ -2,87 +2,101 @@
     "frontend": [
         {
             "id": 1,
-            "name": "React.js"
+            "name": "React.js",
+            "project": 1
         },
         {
             "id": 2,
-            "name": "Vue.js"
-        },
-        {
-            "id": 3,
-            "name": "SASS"
+            "name": "Vue.js",
+            "project": 2
         }
     ],
     "backend": [
         {
             "id": 1,
-            "name": "Node.js"
+            "name": "Node.js",
+            "project": 3
         },
         {
             "id": 2,
-            "name": "WebSocket (Socket.IO)"
+            "name": "WebSocket (Socket.IO)",
+            "project": 0
         },
         {
             "id": 3,
-            "name": "REST"
+            "name": "REST",
+            "project": 4
         },
         {
             "id": 4,
-            "name": "GraphQL"
+            "name": "GraphQL",
+            "project": 0
         },
         {
             "id": 5,
-            "name": "gRPC"
+            "name": "gRPC",
+            "project": 0
         }
     ],
     "database": [
         {
             "id": 1,
-            "name": "MySQL"
+            "name": "MySQL",
+            "project": 2
         },
         {
             "id": 2,
-            "name": "BigQuery"
+            "name": "BigQuery",
+            "project": 1
         },
         {
             "id": 3,
-            "name": "MongoDB"
+            "name": "MongoDB",
+            "project": 1
         },
         {
             "id": 4,
-            "name": "PostgreSQL"
+            "name": "PostgreSQL",
+            "project": 0
         }
     ],
     "devops": [
         {
             "id": 1,
-            "name": "Linux"
+            "name": "Linux",
+            "project": 3
         },
         {
             "id": 2,
-            "name": "Bash Script"
+            "name": "Bash Script",
+            "project": 0
         },
         {
             "id": 3,
-            "name": "Docker"
+            "name": "Docker",
+            "project": 1
         }
     ],
     "programming": [
         {
             "id": 1,
-            "name": "JavaScript"
+            "name": "JavaScript",
+            "project": 3
         },
         {
             "id": 2,
-            "name": "TypeScript"
+            "name": "TypeScript",
+            "project": 3
         },
         {
             "id": 3,
-            "name": "PHP"
+            "name": "PHP",
+            "project": 1
         },
         {
             "id": 4,
-            "name": "Go"
+            "name": "Go",
+            "project": 0
         }
     ]
 }

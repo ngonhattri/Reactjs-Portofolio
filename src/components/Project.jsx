@@ -16,7 +16,7 @@ const Project = () => {
                 itemLayout="vertical"
                 size="large"
                 pagination={{
-                    pageSize: 3,
+                    pageSize: 2,
                 }}
                 dataSource={data}
                 renderItem={(item) => (

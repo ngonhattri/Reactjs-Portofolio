@@ -27,7 +27,7 @@ const Profile = () => {
                 ]}
             >
                 <Meta title="Nguyễn Minh Quân" />
-                <Meta description="Back-end Developer" />
+                <Meta style={{ fontWeight: 'bold' }} description="Back-end Developer" />
             </Card>
         </>
     );
