@@ -1,0 +1,78 @@
+{
+    "frontend": [
+        {
+            "id": 1,
+            "name": "React.js"
+        },
+        {
+            "id": 2,
+            "name": "Vue.js"
+        },
+        {
+            "id": 3,
+            "name": "SASS"
+        }
+    ],
+    "backend": [
+        {
+            "id": 1,
+            "name": "Node.js"
+        },
+        {
+            "id": 2,
+            "name": "PHP"
+        },
+        {
+            "id": 3,
+            "name": "Go"
+        },
+        {
+            "id": 4,
+            "name": "WebSocket (Socket.IO)"
+        },
+        {
+            "id": 5,
+            "name": "REST"
+        },
+        {
+            "id": 6,
+            "name": "GraphQL"
+        },
+        {
+            "id": 7,
+            "name": "gRPC"
+        }
+    ],
+    "database": [
+        {
+            "id": 1,
+            "name": "MySQL"
+        },
+        {
+            "id": 2,
+            "name": "BigQuery"
+        },
+        {
+            "id": 3,
+            "name": "MongoDB"
+        },
+        {
+            "id": 4,
+            "name": "PostgreSQL"
+        }
+    ],
+    "devops": [
+        {
+            "id": 1,
+            "name": "Linux"
+        },
+        {
+            "id": 2,
+            "name": "Bash Script"
+        },
+        {
+            "id": 3,
+            "name": "Docker"
+        }
+    ]
+}

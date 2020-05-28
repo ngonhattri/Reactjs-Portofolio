@@ -1,5 +1,5 @@
 {
-    "name": "blog",
+    "name": "reactjs-profile",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -8,7 +8,6 @@
         "@testing-library/user-event": "^7.1.2",
         "antd": "^3.26.7",
         "aos": "^2.3.4",
-        "axios": "^0.19.2",
         "jquery": "^3.4.1",
         "moment": "^2.24.0",
         "node-sass": "^4.13.1",

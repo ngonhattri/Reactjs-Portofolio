@@ -38,7 +38,10 @@ const Menu = () => {
                     <Link to="/">Profile</Link>
                 </p>
                 <p>
-                    <Link to="/blogs">Blogs</Link>
+                    <Link to="/timeline">Timeline</Link>
+                </p>
+                <p>
+                    <Link to="/projects">Projects</Link>
                 </p>
             </Drawer>
         </>
