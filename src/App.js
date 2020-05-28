@@ -1,35 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { HashRouter, Switch } from 'react-router-dom';
+import React from 'react';
+import { Switch, HashRouter } from 'react-router-dom';
 import routes from './routes';
-import Header from './components/layouts/Header';
-import Sidebar from './components/layouts/Sidebar';
-import Menu from './components/layouts/Menu';
-import GlobalRoute from './components/global/GlobalRoute';
+import GlobalRoute from './global/GlobalRoute';
 import { Layout } from 'antd';
-import { Provider } from 'react-redux';
-import store from './store';
 // CSS
 import 'aos/dist/aos.css';
 import 'antd/dist/antd.css';
-import './App.scss';
+import './global/index.scss';
 
 const App = () => {
-
-    const [collapsed, setCollapsed] = useState(false);
-    const [width, setWidth] = useState(window.innerWidth)
-    const changeCollapsed = () => {
-        setCollapsed(!collapsed);
-    };
-    useEffect(() => {
-        const handleResize = () => {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-    }, [])
-
     const showContent = routes => {
         var result = null;
         if (routes.length > 0) {
@@ -49,23 +28,11 @@ const App = () => {
     };
 
     return (
-        <Provider store={store}>
+        <Layout>
             <HashRouter>
-                <Layout>
-                    {width > 470 ?
-                        (
-                            <Sidebar collapsed={collapsed} />
-                        ) : (
-                            <Menu />
-                        )
-                    }
-                    <Layout>
-                        <Header onClick={changeCollapsed} collapsed={collapsed} width={width} />
-                        {showContent(routes)}
-                    </Layout>
-                </Layout>
+                {showContent(routes)}
             </HashRouter>
-        </Provider>
+        </Layout>
     );
 }
 

@@ -20,26 +20,18 @@
         },
         {
             "id": 2,
-            "name": "PHP"
-        },
-        {
-            "id": 3,
-            "name": "Go"
-        },
-        {
-            "id": 4,
             "name": "WebSocket (Socket.IO)"
         },
         {
-            "id": 5,
+            "id": 3,
             "name": "REST"
         },
         {
-            "id": 6,
+            "id": 4,
             "name": "GraphQL"
         },
         {
-            "id": 7,
+            "id": 5,
             "name": "gRPC"
         }
     ],
@@ -73,6 +65,24 @@
         {
             "id": 3,
             "name": "Docker"
+        }
+    ],
+    "programming": [
+        {
+            "id": 1,
+            "name": "JavaScript"
+        },
+        {
+            "id": 2,
+            "name": "TypeScript"
+        },
+        {
+            "id": 3,
+            "name": "PHP"
+        },
+        {
+            "id": 4,
+            "name": "Go"
         }
     ]
 }
