@@ -1,29 +1,28 @@
-[
-    {
+[{
         "id": 1,
         "name": "Github",
-        "link": "https://github.com/minhquan3197",
-        "icon": "github",
+        "link": "https://github.com/ngonhattri",
+        "icon": "GithubOutlined",
         "color": "#333"
     },
     {
         "id": 2,
         "name": "Facebook",
-        "link": "https://www.facebook.com/Quan.K0r1",
+        "link": "https://www.facebook.com/ngo.nhattri",
         "icon": "facebook",
         "color": "#3b5998"
     },
     {
         "id": 3,
         "name": "Instagram",
-        "link": "https://www.instagram.com/quan.k0r1",
+        "link": "https://www.instagram.com/nhattri1503",
         "icon": "instagram",
         "color": "#e1306c"
     },
     {
         "id": 4,
         "name": "Linkedin",
-        "link": "https://www.linkedin.com/in/nguyen-quan-a46518165",
+        "link": "https://www.linkedin.com/in/ngonhattri",
         "icon": "linkedin",
         "color": "#0077b5"
     }

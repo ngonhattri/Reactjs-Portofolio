@@ -1,52 +1,38 @@
 {
-    "frontend": [
-        {
+    "frontend": [{
+        "id": 1,
+        "name": "React.js",
+        "project": 1
+    }],
+    "backend": [{
+        "id": 1,
+        "name": "Node.js",
+        "project": 3
+    }],
+    "mobile": [{
             "id": 1,
-            "name": "React.js",
-            "project": 1
+            "name": "Android",
+            "project": 2
         },
         {
             "id": 2,
-            "name": "Vue.js",
-            "project": 2
-        }
-    ],
-    "backend": [
-        {
-            "id": 1,
-            "name": "Node.js",
+            "name": "Flutter",
             "project": 3
         },
         {
-            "id": 2,
-            "name": "WebSocket (Socket.IO)",
-            "project": 0
-        },
-        {
             "id": 3,
-            "name": "REST",
-            "project": 4
-        },
-        {
-            "id": 4,
-            "name": "GraphQL",
-            "project": 0
-        },
-        {
-            "id": 5,
-            "name": "gRPC",
-            "project": 0
+            "name": "iOS",
+            "project": 2
         }
     ],
-    "database": [
-        {
+    "database": [{
             "id": 1,
             "name": "MySQL",
             "project": 2
         },
         {
             "id": 2,
-            "name": "BigQuery",
+            "name": "Oracle",
             "project": 1
         },
         {
@@ -57,46 +43,39 @@
         {
             "id": 4,
             "name": "PostgreSQL",
-            "project": 0
+            "project": 1
+        },
+        {
+            "id": 5,
+            "name": "MSSQL",
+            "project": 3
         }
     ],
-    "devops": [
-        {
+    "devops": [],
+    "programming": [{
             "id": 1,
-            "name": "Linux",
-            "project": 3
+            "name": "Java",
+            "project": 2
         },
         {
             "id": 2,
-            "name": "Bash Script",
-            "project": 0
+            "name": "Swift",
+            "project": 2
         },
         {
             "id": 3,
-            "name": "Docker",
-            "project": 1
-        }
-    ],
-    "programming": [
-        {
-            "id": 1,
-            "name": "JavaScript",
-            "project": 3
-        },
-        {
-            "id": 2,
-            "name": "TypeScript",
-            "project": 3
-        },
-        {
-            "id": 3,
-            "name": "PHP",
-            "project": 1
+            "name": "Dart",
+            "project": 2
         },
         {
             "id": 4,
-            "name": "Go",
-            "project": 0
+            "name": "C#",
+            "project": 1
+        },
+        {
+            "id": 5,
+            "name": "JavaScript",
+            "project": 1
         }
     ]
 }

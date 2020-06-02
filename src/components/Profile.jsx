@@ -1,35 +1,35 @@
-import React from 'react';
-import { Card, Icon } from 'antd';
-
+import React from "react";
+import { Card } from "antd";
+import { CloudDownloadOutlined } from "@ant-design/icons";
 const { Meta } = Card;
 
 const Profile = () => {
-    return (
-        <>
-            <Card
-                cover={
-                    <img
-                        alt="Quân Nguyễn"
-                        src="https://res.cloudinary.com/kori/image/upload/v1547055160/me.jpg"
-                    />
-                }
-                actions={[
-                    <Icon
-                        type="download"
-                        key="download"
-                        onClick={() =>
-                            window.open(
-                                'https://drive.google.com/open?id=1gji1wPYP3h9WFeWp042qUnFnZSmLJDAy',
-                                '_blank',
-                            )
-                        }
-                    />,
-                ]}
-            >
-                <Meta title="Nguyễn Minh Quân" />
-                <Meta style={{ fontWeight: 'bold' }} description="Back-end Developer" />
-            </Card>
-        </>
-    );
+  return (
+    <>
+      <Card
+        cover={
+          <img
+            alt="Ngô Nhật Trí"
+            src="https://res.cloudinary.com/nhattri1503/image/upload/v1591084058/admin_hrcsze.jpg"
+          />
+        }
+        actions={[
+          <CloudDownloadOutlined
+            style={{ fontSize: "30px" }}
+            key="download"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1Lnful81XgpQVjDQCHg5TzruH7MoeS_WM/view?usp=sharing",
+                "_blank"
+              )
+            }
+          />,
+        ]}
+      >
+        <Meta title="Ngô Nhật Trí" />
+        <Meta style={{ fontWeight: "bold" }} description="Software Engineer" />
+      </Card>
+    </>
+  );
 };
 export default Profile;

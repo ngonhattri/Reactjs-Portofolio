@@ -1,26 +1,19 @@
-[
-    {
+[{
         "id": 1,
-        "title": "Thế Giới Thợ",
-        "description": "Back-end Developer",
-        "content": "Maintain and do new feature, Firebase push notification"
+        "title": "標準コンパックG",
+        "description": "Java Developer",
+        "content": "Maintain and do new feature, convert Oracle to PostgreSQL"
     },
     {
         "id": 2,
-        "title": "Plansmart",
-        "description": "Back-end Developer",
-        "content": "Scrum methodology, clear and optimize code, Flow analytics, GIT Flow, Beginning AWS Lambda, Build core 40%"
+        "title": "Flutter-Nihongo",
+        "description": "Mobile Developer",
+        "content": "Handwriting Recognition, Kanji Dict, Firebase Auth"
     },
     {
         "id": 3,
-        "title": "Custom API Mocoapp",
-        "description": "Full-stack Developer",
-        "content": "Build core server-side and client-side, Google BigQuery, To hone developing skills DevOPS through Docker, Jenkins, AWS, CI/CD, Gitlab"
-    },
-    {
-        "id": 4,
-        "title": "Nails services",
-        "description": "Full-stack Developer",
-        "content": "Build service for nails store, communicated directly with client, PM, TA and other team members"
+        "title": "Android-Quiz",
+        "description": "Android Developer",
+        "content": "Android in Java, design pattern, connect SQlite"
     }
 ]

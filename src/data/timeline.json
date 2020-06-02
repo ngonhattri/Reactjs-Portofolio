@@ -1,20 +1,11 @@
 {
-    "educations": [
-        {
-            "id": 1,
-            "name": "KhoaPham Training Center",
-            "position": "Course: MEAN Stack & PHP/Laravel",
-            "year": "2017 - 2018"
-        },
-        {
-            "id": 2,
-            "name": "Ho Chi Minh University of Technology",
-            "position": "Faculty of Information Technology",
-            "year": "2016 – 2020"
-        }
-    ],
-    "experiences": [
-        {
+    "educations": [{
+        "id": 1,
+        "name": "Ho Chi Minh University of Technology",
+        "position": "Faculty of Information Technology",
+        "year": "2016 – 2020"
+    }],
+    "experiences": [{
             "id": 1,
             "name": "Circle K",
             "position": "Customer Service Representative",
@@ -23,24 +14,10 @@
         },
         {
             "id": 2,
-            "name": "GMV Tech",
-            "position": "Intern Developer",
-            "year": "7/2018 – 10/2018",
-            "image": "https://res.cloudinary.com/kori/image/upload/v1581871527/company/gmv.png"
-        },
-        {
-            "id": 3,
-            "name": "Vitop Media",
+            "name": "Marutou Compack VietNam, MCV",
             "position": "Fresher Developer",
-            "year": "9/2019 – 2/2020",
-            "image": "https://res.cloudinary.com/kori/image/upload/v1581871527/company/vitop.png"
-        },
-        {
-            "id": 4,
-            "name": "BCMS Technology., JSC",
-            "position": "Junior Developer",
-            "year": "4/2020 – Current",
-            "image": "https://res.cloudinary.com/kori/image/upload/v1587872804/company/bcms.jpg"
+            "year": "5/2020 – Current",
+            "image": "https://res.cloudinary.com/nhattri1503/image/upload/v1591098920/marutou_vn_vocttw.png"
         }
     ]
 }
